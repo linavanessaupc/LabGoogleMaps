@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ubicaciones y Direcciones"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/button_show_location_museo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mostrar Museo Nacional de Colombia"
+        android:layout_below="@id/title"
+        android:layout_marginBottom="10dp"
+        android:onClick="showLocationMuseo"/>
+
+    <Button
+        android:id="@+id/button_show_location_catedral"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mostrar Catedral de Sal de Zipaquirá"
+        android:layout_below="@id/button_show_location_museo"
+        android:layout_marginBottom="10dp"
+        android:onClick="showLocationCatedral"/>
+
+    <Button
+        android:id="@+id/button_show_location_jaime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mostrar Parque Jaime Duque"
+        android:layout_below="@id/button_show_location_catedral"
+        android:layout_marginBottom="10dp"
+        android:onClick="showLocationJaime"/>
+
+    <Button
+        android:id="@+id/button_directions_museo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Direcciones a Museo Nacional de Colombia"
+        android:layout_below="@id/button_show_location_jaime"
+        android:layout_marginBottom="10dp"
+        android:onClick="getDirectionsToMuseo"/>
+
+    <Button
+        android:id="@+id/button_directions_catedral"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Direcciones a Catedral de Sal"
+        android:layout_below="@id/button_directions_museo"
+        android:layout_marginBottom="10dp"
+        android:onClick="getDirectionsToCatedral"/>
+
+    <Button
+        android:id="@+id/button_directions_jaime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Direcciones a Parque Jaime Duque"
+        android:layout_below="@id/button_directions_catedral"
+        android:layout_marginBottom="10dp"
+        android:onClick="getDirectionsToJaime"/>
+
+    <Button
+        android:id="@+id/button_directions_medellin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Direcciones a Medellín"
+        android:layout_below="@id/button_directions_jaime"
+        android:layout_marginBottom="10dp"
+        android:onClick="getDirectionsToMedellin"/>
+
+    <!-- Botón para obtener direcciones a São Paulo, Brasil -->
+    <Button
+        android:id="@+id/button_directions_sao_paulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Direcciones a São Paulo, Brasil"
+        android:layout_below="@id/button_directions_medellin"
+        android:layout_marginBottom="10dp"
+        android:onClick="getDirectionsToSaoPaulo"/>
+
+</RelativeLayout>
